@@ -5,7 +5,7 @@ const EXPIRE_TIME = 3600000; // 1 hour
 
 type CACHE_KEYS = 'USERS_CACHE' | 'OTHER_CACHE_KEY';
 
-// Returns cached data if it exists and is not expired, otherwise fetches new data
+// Returns cached data if it exists in storage and is not expired, otherwise fetches new data from api
 export const cacheHandler = async (
   key: CACHE_KEYS,
   storage: Storage,

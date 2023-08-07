@@ -1,5 +1,10 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
+/*
+ * Storage service
+ *
+ * utilizes AsyncStorage to store data locally
+ */
 export interface Storage {
   storeData: (key: string, value: any) => Promise<void>;
   getData: (key: string) => Promise<any>;
